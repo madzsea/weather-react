@@ -88,6 +88,12 @@ img {
   padding-bottom: 40px;
 }
 
+.link {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
 .open-source {
   font-family: "Oxygen", sans-serif;
   color: #e78678;

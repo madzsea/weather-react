@@ -9,6 +9,9 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
     <Location />
+    <a href="https://github.com/madzsea/weather-react" className="link">
+      Open Source code
+    </a>
   </React.StrictMode>,
   document.getElementById("root")
 );
