@@ -1,0 +1,177 @@
+body {
+  font-family: "Oxygen", sans-serif;
+  background-color: #d2dee9;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 0 auto;
+  margin: 15px auto;
+  background-color: #fed28f;
+  font-weight: bold;
+  font-size: 10px;
+  font-family: "Oxygen", sans-serif;
+  border-radius: 20px;
+  border: 1px solid #fed28f;
+}
+
+div {
+  text-transform: capitalize;
+}
+
+form {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-family: "Oxygen", sans-serif;
+  font-size: 48px;
+  padding-top: 20px;
+  color: #706a8a;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Oxygen", sans-serif;
+  background: white;
+  border-style: solid;
+  border-color: #fed28f;
+  border-radius: 20px;
+  padding: 20px 20px;
+  margin: 0 auto;
+  height: fit-content;
+  text-align: center;
+  display: block;
+  font-size: 40px;
+  max-width: 400px;
+}
+
+h4 {
+  font-family: "Oxygen", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+img {
+  color: #e78678;
+}
+
+.active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+.active:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.card {
+  text-align: center;
+  margin-top: 30px;
+  padding: 30px;
+  background-color: white;
+  border-color: #706a8a;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 1.8px;
+}
+
+.card-title {
+  font-size: 30px;
+  color: #706a8a;
+}
+.citySearch {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.open-source {
+  font-family: "Oxygen", sans-serif;
+  color: #e78678;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.open-source:hover {
+  color: #706a8a;
+  cursor: pointer;
+}
+
+.search {
+  background: #e78678;
+  border: #e78678;
+  font-weight: bold;
+  font-size: 10px;
+  margin: 0 auto;
+  display: inline;
+}
+
+.search:hover {
+  background: #8f8787;
+  border: #8f8787;
+  font-weight: bold;
+  font-size: 10px;
+  margin: 0;
+}
+
+.now {
+  text-align: center;
+  padding: 20px auto;
+}
+
+.temperature-description {
+  line-height: 1.8;
+}
+
+.today-forecast {
+  line-height: 1.8;
+}
+
+.today-weather {
+  font-size: 18px;
+  color: rgb(141, 134, 134);
+}
+
+.units {
+  font-size: 18px;
+}
+.weather {
+  font-size: 50px;
+  text-align: center;
+  color: #e78678;
+}
+
+.weather-body {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+  font-size: 30px;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.weather-forecast-max {
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #706a8a;
+}
+
+.weather-forecast-min {
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #fed28f;
+}
