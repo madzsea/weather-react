@@ -4,11 +4,13 @@ import "./styles.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Location from "./Location";
+import Forecast from "./Forecast";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
     <Location />
+    <Forecast />
     <a href="https://github.com/madzsea/weather-react" className="link">
       Open Source code
     </a>
