@@ -10,7 +10,7 @@ export default function App() {
         <h1>Weather</h1>
         <form id="city-search">
           <input type="text" placeholder="Enter a city" id="city-info" />
-          <button type="button" className="btn btn-outline-info">
+          <button type="button" className="btn btn-info">
             Submit
           </button>
           <br />
