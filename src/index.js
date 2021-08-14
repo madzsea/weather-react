@@ -3,17 +3,11 @@ import ReactDOM from "react-dom";
 import "./styles.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Location from "./Location";
-import Forecast from "./Forecast";
+import "bootstrap/dist/css/bootstrap.css";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Location />
-    <Forecast />
-    <a href="https://github.com/madzsea/weather-react" className="link">
-      Open Source code
-    </a>
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,29 +1,23 @@
-body {
+.App body {
   font-family: "Oxygen", sans-serif;
-  background-color: #d2dee9;
 }
 
-button {
-  display: block;
-  margin: 0 auto;
-  padding: 0 auto;
-  margin: 15px auto;
-  background-color: #fed28f;
-  font-weight: bold;
-  font-size: 10px;
+.App button {
   font-family: "Oxygen", sans-serif;
-  border-radius: 20px;
-  border: 1px solid #fed28f;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 12px;
 }
 
-div {
+.App div {
   text-transform: capitalize;
 }
 
-form {
+.App form {
   text-align: center;
 }
-h1 {
+.App h1 {
   text-align: center;
   font-family: "Oxygen", sans-serif;
   font-size: 48px;
@@ -32,7 +26,7 @@ h1 {
   font-weight: bold;
 }
 
-h2 {
+.App h2 {
   font-family: "Oxygen", sans-serif;
   background: white;
   border-style: solid;
@@ -47,14 +41,14 @@ h2 {
   max-width: 400px;
 }
 
-h4 {
+.App h4 {
   font-family: "Oxygen", sans-serif;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
 }
 
-img {
+.App img {
   color: #e78678;
 }
 
@@ -94,35 +88,12 @@ img {
   margin: 0 auto;
 }
 
-.open-source {
-  font-family: "Oxygen", sans-serif;
-  color: #e78678;
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-  padding-top: 10px;
-}
-
-.open-source:hover {
-  color: #706a8a;
-  cursor: pointer;
-}
-
-.search {
-  background: #e78678;
-  border: #e78678;
-  font-weight: bold;
-  font-size: 10px;
-  margin: 0 auto;
-  display: inline;
-}
-
 .search:hover {
   background: #8f8787;
   border: #8f8787;
   font-weight: bold;
   font-size: 10px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .now {
