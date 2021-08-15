@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
 import React, { useState } from "react";
 import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -43,43 +44,7 @@ export default function Weather(props) {
               Current Location
             </button>
           </form>
-          <div className="format">
-            <h2>
-              {" "}
-              <span id="city">{weatherData.city}</span>
-              <div className="temperature-description">
-                <span id="temperature">
-                  {Math.round(weatherData.temperature)}
-                </span>
-                <span id="units">°C</span>
-              </div>
-              <div>
-                <img
-                  src="https://openweathermap.org/img/wn/{weatherData.icon}@2x.png"
-                  id="icon"
-                  alt="weather-icon"
-                />
-              </div>
-              <span className="today-weather"> Weather:</span>{" "}
-              <span id="description" className="text-capitalize">
-                {weatherData.description}
-              </span>
-              <div>
-                {" "}
-                <span className="today-weather"> Wind speed: </span>
-                <span id="wind" className="today-details">
-                  {weatherData.wind} km/h
-                </span>
-              </div>
-              <div>
-                {" "}
-                <span className="today-weather"> Humidity: </span>
-                <span id="humidity" className="today-details">
-                  {weatherData.humidity}%
-                </span>
-              </div>
-            </h2>
-          </div>
+          <WeatherInfo data={weatherData} />
         </div>
       </div>
     );
