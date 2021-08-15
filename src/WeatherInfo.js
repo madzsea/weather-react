@@ -1,11 +1,12 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import "./styles.css";
 
 export default function WeatherInfo(props) {
   return (
     <div className="format">
-      <h2>
+      <h2 className="daily-forecast">
         {" "}
         <span id="city">{props.data.city}</span>
         <WeatherTemperature celsius={props.data.temperature} />

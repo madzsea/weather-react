@@ -1,0 +1,17 @@
+.App h3 {
+  border: 1px, solid, #e78678;
+}
+
+.weather-forecast-max {
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #706a8a;
+  text-align: center;
+}
+
+.weather-forecast-min {
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #fed28f;
+  text-align: center;
+}
