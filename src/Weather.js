@@ -24,14 +24,13 @@ export default function Weather(props) {
   }
   function search() {
     const apiKey = "e70f39679296042a105ae9d2c915332b";
-    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
   function handleSubmit(event) {
     event.preventDefault();
     search(city);
-    // Search for a city
   }
 
   function handleCity(event) {
