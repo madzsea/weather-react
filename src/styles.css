@@ -14,6 +14,11 @@
   text-transform: capitalize;
 }
 
+.App img {
+  display: block;
+  margin: 0 auto;
+}
+
 .App form {
   text-align: center;
 }

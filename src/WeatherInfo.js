@@ -1,4 +1,6 @@
 import React from "react";
+import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
   return (
@@ -6,16 +8,14 @@ export default function WeatherInfo(props) {
       <h2>
         {" "}
         <span id="city">{props.data.city}</span>
+        <WeatherTemperature celsius={props.data.temperature} />
         <div className="temperature-description">
           <span id="temperature">{Math.round(props.data.temperature)}</span>
           <span id="units">°C</span>
         </div>
         <div>
-          <img
-            src="https://openweathermap.org/img/wn/{weatherData.icon}@2x.png"
-            id="icon"
-            alt="weather-icon"
-          />
+          {" "}
+          <WeatherIcon code={props.data.iconUrl} />
         </div>
         <span className="today-weather"> Weather:</span>{" "}
         <span id="description" className="text-capitalize">
