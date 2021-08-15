@@ -2,6 +2,7 @@ import "./styles.css";
 import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -9,6 +10,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
+      date: new Date(response.data.dt * 1000),
       ready: true,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
@@ -24,6 +26,9 @@ export default function Weather(props) {
       <div className="App">
         <div className="container body">
           <h1>Weather</h1>
+          <h4 className="date">
+            <FormattedDate date={weatherData.date} />
+          </h4>
           <form id="city-search">
             <input type="text" placeholder="Enter a city" id="city-info" />
             <button type="button" className="btn btn-info">
@@ -50,7 +55,7 @@ export default function Weather(props) {
               </div>
               <div>
                 <img
-                  src="https://openweathermap.org/img/wn/01d@2x.png"
+                  src="https://openweathermap.org/img/wn/{weatherData.icon}@2x.png"
                   id="icon"
                   alt="weather-icon"
                 />

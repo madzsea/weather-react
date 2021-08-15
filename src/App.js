@@ -1,8 +1,7 @@
 import "./styles.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Weather from "./Weather";
-import axios from "axios";
-import React, { useState } from "react";
+import React from "react";
 
 export default function App() {
   return (
