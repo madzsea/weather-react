@@ -11,7 +11,6 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       date: new Date(response.data.dt * 1000),
       ready: true,
