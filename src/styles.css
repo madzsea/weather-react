@@ -44,6 +44,8 @@
   display: block;
   font-size: 40px;
   max-width: 400px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .App h3 {
@@ -97,6 +99,10 @@
 
 .temperature-description {
   line-height: 1.8;
+}
+
+.today-details {
+  font-size: 24px;
 }
 
 .today-weather {

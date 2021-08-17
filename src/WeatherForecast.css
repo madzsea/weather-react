@@ -1,13 +1,32 @@
+.container-forecast {
+}
+
+.forecast-day {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.icon {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.temperature-forecast {
+  text-align: center;
+  padding: 15px;
+}
 .weather-forecast-max {
   font-size: 20px;
   padding-bottom: 10px;
   color: #706a8a;
-  text-align: center;
 }
 
 .weather-forecast-min {
   font-size: 20px;
   padding-bottom: 10px;
   color: #fed28f;
-  text-align: center;
 }
